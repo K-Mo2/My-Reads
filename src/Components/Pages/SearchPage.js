@@ -118,7 +118,7 @@ function SearchPage(props) {
       </div>
 
       <Search />
-      <div>
+      <div className="books-grid">
         {searchBooks === undefined && query.length === 0 && (
           <h1>Please enter a valid search term</h1>
         )}
