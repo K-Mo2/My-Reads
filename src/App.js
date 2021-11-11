@@ -22,15 +22,6 @@ export default function App(props) {
     }
   }, [flag]);
 
-  // const propsRef = useRef(false);
-  // useEffect(() => {
-  //   if (!propsRef.current) {
-  //     foos();
-  //     console.log(props);
-  //     propsRef.current = true;
-  //   }
-  // }, [propsRef.current]);
-
   const foos = async function () {
     try {
       const fetchingBooksFunc = async function (shelfType) {

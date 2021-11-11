@@ -9,13 +9,10 @@ function Book(props) {
 
     const book = event.target.closest(".book");
 
-    console.log(book, shelf);
 
     setCurrShelf(currShelf.splice(-1, 0, shelf));
     setCurrBook(currBook.splice(-1, 0, book));
 
-    console.log(currBook[0], currShelf[0]);
-    console.log(props);
 
     await update(currBook[0], currShelf[0]);
     props.setFlag(true);

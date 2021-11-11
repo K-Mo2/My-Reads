@@ -11,8 +11,6 @@ function SearchPage(props) {
 
   useRef(() => {
     if (stateRef.current) {
-      console.log(props);
-      console.log(searchBooks);
     } else {
       stateRef.current = true;
     }
@@ -47,7 +45,6 @@ function SearchPage(props) {
           .filter((res) => {
             return res.imageLinks;
           });
-        console.log(searchResUpdated);
 
         setSearchBooks(() => {
           return searchResUpdated;
@@ -60,7 +57,6 @@ function SearchPage(props) {
         // );
       } else {
         setSearchBooks({});
-        console.log("hello");
         return <h1>Please enter a valid search term</h1>;
       }
     } catch (error) {
