@@ -50,11 +50,7 @@ function SearchPage(props) {
           return searchResUpdated;
         });
 
-        // console.log(
-        //   searchBooks.map((book) => {
-        //     return book.authors;
-        //   })
-        // );
+       
       } else {
         setSearchBooks({});
         return <h1>Please enter a valid search term</h1>;
