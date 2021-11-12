@@ -18,17 +18,19 @@ body,
 /* main page */
 
 .list-books-title {
-  padding: 10px 0;
-  background: #0195cf;
+  background: black;
   text-align: center;
 }
 
 .list-books-title h1 {
-  font-weight: 800;
-  font-size: 50px;
+  position: absolute;
+  font-weight: 1000;
+  font-size: 90px;
   margin: 0;
   color: white;
   font-family: "Shalimar", cursive;
+  top: 2vh;
+  left: 40vw;
 }
 
 .list-books-content {
@@ -67,13 +69,14 @@ body,
 
 .open-search button {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: #099ad3;
-  font-size: 40px;
   cursor: pointer;
   outline: none;
+  font-weight: 10;
+  font-size: 60px;
 }
 
 .open-search button:hover {
@@ -83,22 +86,26 @@ body,
 /* search page */
 
 .search-books-bar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 5;
   display: flex;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
+  flex-wrap: wrap;
+  position: absolute;
+  width: 60vw;
+  top: 1vh;
+  left: 50vh;
+  z-index: 5;
+  padding: 0;
+  margin-top: 1vh;
 }
 
 .search-books-input-wrapper {
-  flex: 1;
-  background: #e9e;
+  display: flex;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .search-books-bar input {
-  width: 100%;
+  display: block;
+  width: 50vw;
   padding: 15px 10px;
   font-size: 1.25em;
   border: none;
@@ -109,8 +116,8 @@ body,
   display: block;
   top: 20px;
   left: 15px;
-  width: 50px;
-  height: 53px;
+  width: 60px;
+  height: 60px;
   background-image: url("./icons/arrow-back.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -118,6 +125,7 @@ body,
   font-size: 0;
   border: none;
   outline: none;
+  background-color: rgb(187, 46, 46);
 }
 
 button:active {

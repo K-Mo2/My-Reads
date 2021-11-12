@@ -49,8 +49,6 @@ function SearchPage(props) {
         setSearchBooks(() => {
           return searchResUpdated;
         });
-
-       
       } else {
         setSearchBooks({});
         return <h1>Please enter a valid search term</h1>;
@@ -99,7 +97,7 @@ function SearchPage(props) {
                 */}
             <input
               type="text"
-              placeholder="Search by title or author"
+              placeholder="Search by title or author (example: Science)"
               onChange={searching}
             />
           </div>
