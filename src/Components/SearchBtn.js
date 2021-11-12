@@ -5,7 +5,7 @@ function SearchBtn(props) {
   return (
     <Link to="/search">
       <div className="open-search">
-        <button>Add a book</button>
+        <button>+</button>
       </div>
     </Link>
   );

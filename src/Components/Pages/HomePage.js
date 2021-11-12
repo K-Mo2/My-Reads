@@ -33,13 +33,13 @@ const HomePage = function (props) {
   return (
     <div className="list-books">
       <div className="list-books-title">
-        <h1>MyReads</h1>
+        <h1>My Reads</h1>
       </div>
       <div className="list-books-content" />
-      <Shelf title="Want to Read" {...props}>
+      <Shelf title="Want to read" {...props}>
         {appendingFilteredBooks(props.wantToRead)}
       </Shelf>
-      <Shelf title="Currently Reading" {...props}>
+      <Shelf title="Currently reading" {...props}>
         {appendingFilteredBooks(props.currentlyReading)}
       </Shelf>
       <Shelf title="Read" {...props}>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Shalimar&display=swap");
+
 html,
 body,
 .root {
@@ -17,14 +19,16 @@ body,
 
 .list-books-title {
   padding: 10px 0;
-  background: #099ad3;
+  background: #0195cf;
   text-align: center;
 }
 
 .list-books-title h1 {
-  font-weight: 400;
+  font-weight: 800;
+  font-size: 50px;
   margin: 0;
   color: white;
+  font-family: "Shalimar", cursive;
 }
 
 .list-books-content {
@@ -43,7 +47,10 @@ body,
 }
 
 .bookshelf-title {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #03a5e6;
+  color: white;
+  font-family: "Shalimar", cursive;
+  font-size: 50px;
 }
 
 .bookshelf-books {
@@ -54,6 +61,8 @@ body,
   position: fixed;
   right: 25px;
   bottom: 25px;
+  cursor: pointer;
+  outline: none;
 }
 
 .open-search button {
@@ -61,18 +70,14 @@ body,
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #099ad3;
-  background-image: url("./icons/add.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 28px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  font-size: 0;
-  outline: 0;
+  background-color: #099ad3;
+  font-size: 40px;
+  cursor: pointer;
+  outline: none;
 }
 
 .open-search button:hover {
-  background-color: #099ad3;
+  background-color: #61cbf5;
 }
 
 /* search page */
@@ -152,6 +157,7 @@ button:active {
 
 .book-title {
   margin-top: 10px;
+  color: white;
 }
 
 .book-authors {
