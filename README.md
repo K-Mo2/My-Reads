@@ -10,12 +10,17 @@
 
 ### Overview
 
-This project contains of App, HomePage, SearchPage, Shelf and Book components.
-This web app allows the user to change books' status around ( want to read,currently reading, read and none) in different sections and provide a search for certain categories of books and add them in one of these sections.
+-This is a library web app that consumes a third party API.
+-The app gives users three shelves to store their books in, these shelves are ( Want To Read, Currently Reading, Read ).
+-The app has a search page with a search bar to search for books with the key terms.
+-The app allows users to search for books using search terms or categories and add the books they want to the user shelves.
+-Users can add their books to any shelf they prefer and also switch books status among shelves.
 
 ## Technologies used
 
 1- React.js
+
+2- API
 
 ## Skills practised
 
@@ -34,6 +39,10 @@ This web app allows the user to change books' status around ( want to read,curre
 7- Searching for content with the search bar
 
 8- Maintaining the app state
+
+9- REST API
+
+10- Consuming third party API
 
 and much more .......etc
 
