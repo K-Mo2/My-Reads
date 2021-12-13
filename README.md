@@ -14,9 +14,9 @@
 
 -The app gives users three shelves to store their books in, these shelves are ( Want To Read, Currently Reading, Read ).
 
--The app has a search page with a search bar to search for books with the key terms.
+-The app has a search page with a search bar to search for books using key terms included in the SEARCH_TERMS.md file attched in this repository.
 
--The app allows users to search for books using search terms or categories and add the books they want to the user shelves.
+-The app allows users to search for books using search terms or categories and add the books they want to their shelves.
 
 -Users can add their books to any shelf they prefer and also switch books status among shelves.
 
@@ -55,13 +55,15 @@ and much more .......etc
 
 To run the project:
 
-1- Download or clone the project.
+1- Open your terminal.
 
-2- Open your terminal in project directory.
-
-3- Run the following commands in your terminal.
+2- Run the following commands in your terminal.
 
 ```
+git clone https://github.com/K-Mo2/My-Reads-Project
+
+cd My-Reads-Project
+
 npm install
 
 npm start
