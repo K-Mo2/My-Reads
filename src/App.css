@@ -12,13 +12,13 @@ body {
 
 body,
 .app {
-  background: black;
+  background: white;
 }
 
 /* main page */
 
 .list-books-title {
-  background: black;
+  background: crimson;
   text-align: center;
 }
 
@@ -34,19 +34,21 @@ body,
 @media screen and (max-width: 768px) {
   .list-books-title h1 {
     display: block;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     position: absolute;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     right: 50vw;
     width: 30vw;
+    top: 1vh;
   }
 }
-.list-books-content {
-  padding: 0 0 80px;
-  flex: 1;
+
+@media screen and (max-width: 768px) {
+  .list-books-content {
+    padding: 0 0 10vh;
+    background: crimson;
+    color: white;
+  }
 }
 
 .bookshelf {
@@ -60,8 +62,8 @@ body,
 }
 
 .bookshelf-title {
-  border-bottom: 1px solid #03a5e6;
-  color: white;
+  border-bottom: 1px solid crimson;
+  color: black;
   font-family: "Shalimar", cursive;
   font-size: 50px;
 }
@@ -87,7 +89,7 @@ body,
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #099ad3;
+  background-color: crimson;
   cursor: pointer;
   outline: none;
   font-weight: 10;
@@ -95,7 +97,7 @@ body,
   border: none;
   text-align: center;
   font-weight: 500;
-  color: black;
+  color: white;
 }
 p {
   display: block;
@@ -104,7 +106,7 @@ p {
   margin-top: 7px;
 }
 .open-search:hover {
-  background-color: #61cbf5;
+  background-color: red;
 }
 @media screen and (max-width: 768px) {
   .open-search {
@@ -145,8 +147,9 @@ p {
   width: 50vw;
   padding: 15px 10px;
   font-size: 1.25em;
-  border: none;
+  border: 1px solid crimson;
   outline: none;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -183,7 +186,9 @@ p {
   font-size: 0;
   border: none;
   outline: none;
-  background-color: rgb(187, 46, 46);
+  background-color: crimson;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 button:active {
@@ -223,7 +228,7 @@ button:active {
 
 .book-title {
   margin-top: 10px;
-  color: white;
+  color: black;
 }
 
 .book-authors {
@@ -244,7 +249,7 @@ button:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #099ad3;
+  background: crimson;
   background-image: url("./icons/arrow-drop-down.svg");
   background-repeat: no-repeat;
   background-position: center;
