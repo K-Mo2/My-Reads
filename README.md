@@ -11,10 +11,15 @@
 ### Overview
 
 -This is a library web app that consumes a third party API.
+
 -The app gives users three shelves to store their books in, these shelves are ( Want To Read, Currently Reading, Read ).
+
 -The app has a search page with a search bar to search for books with the key terms.
+
 -The app allows users to search for books using search terms or categories and add the books they want to the user shelves.
+
 -Users can add their books to any shelf they prefer and also switch books status among shelves.
+
 
 ## Technologies used
 
