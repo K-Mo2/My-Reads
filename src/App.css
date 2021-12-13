@@ -23,7 +23,6 @@ body,
 }
 
 .list-books-title h1 {
-  position: absolute;
   font-weight: 1000;
   font-size: 90px;
   margin: 0;
@@ -32,7 +31,19 @@ body,
   top: 2vh;
   left: 40vw;
 }
-
+@media screen and (max-width: 768px) {
+  .list-books-title h1 {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    font-size: 35px;
+    text-align: center;
+    right: 50vw;
+    width: 30vw;
+  }
+}
 .list-books-content {
   padding: 0 0 80px;
   flex: 1;
@@ -54,7 +65,11 @@ body,
   font-family: "Shalimar", cursive;
   font-size: 50px;
 }
-
+@media screen and (max-width: 768px) {
+  .bookshelf-title {
+    font-size: 20px;
+  }
+}
 .bookshelf-books {
   text-align: center;
 }
@@ -67,7 +82,7 @@ body,
   outline: none;
 }
 
-.open-search button {
+.open-search {
   display: block;
   width: 80px;
   height: 80px;
@@ -76,11 +91,33 @@ body,
   cursor: pointer;
   outline: none;
   font-weight: 10;
-  font-size: 60px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+  color: black;
 }
-
-.open-search button:hover {
+p {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 7px;
+}
+.open-search:hover {
   background-color: #61cbf5;
+}
+@media screen and (max-width: 768px) {
+  .open-search {
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+  }
+  p {
+    position: relative;
+    bottom: 3px;
+    font-weight: 800;
+  }
 }
 
 /* search page */
@@ -112,6 +149,27 @@ body,
   outline: none;
 }
 
+@media screen and (max-width: 768px) {
+  .search-books-bar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 20vw;
+    top: -5vh;
+  }
+  .search-books-bar input {
+    width: 70vw;
+    height: 10vh;
+    font-size: 10px;
+  }
+  button.close-search {
+    width: 10vw;
+    height: 10vh;
+    position: relative;
+    left: -10vw;
+    top: 10vh;
+  }
+}
 .close-search {
   display: block;
   top: 20px;
